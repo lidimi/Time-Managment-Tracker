@@ -23,7 +23,9 @@ img {
 
 .app {
   width: 75%;
+  min-width: 900px;
   max-width: 1000px;
+  display: flex;
 }
 
 aside {
@@ -82,10 +84,66 @@ aside {
 }
 
 /*============ 
+GRID COMPONENT
+==============*/
+.grid-component {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+.grid-item {
+  background-color: hsl(235, 46%, 20%);
+  color: white;
+  border-radius: 15px;
+  position: relative;
+}
+
+.background {
+  height: 4rem;
+  background-color: aquamarine;
+  border-radius: 15px;
+}
+
+.data {
+  margin-top: -1.5rem;
+  padding: 1.5rem;
+  background-color: inherit;
+  border-radius: 15px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.data h4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+
+.data p {
+  color: hsl(235, 45%, 61%);
+}
+/*============ 
 ACTIVE STATES
 ============== */
 
 h2:hover {
   cursor: pointer;
   color: white;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  background-color: hsl(236, 29%, 30%);
 }

@@ -1,4 +1,4 @@
-export default function Aside() {
+export default function Aside(props) {
   const avatar = require("./images/image-jeremy.png");
 
   return (
@@ -11,9 +11,9 @@ export default function Aside() {
         <h1>Jeremy Robson</h1>
       </div>
       <section className="timespan">
-        <h2>Daily</h2>
-        <h2>Weekly</h2>
-        <h2>Monthly</h2>
+        <h2 onClick={props.toggleTimeSpawn}>Daily</h2>
+        <h2 onClick={props.toggleTimeSpawn}>Weekly</h2>
+        <h2 onClick={props.toggleTimeSpawn}>Monthly</h2>
       </section>
     </aside>
   );
