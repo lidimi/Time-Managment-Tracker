@@ -1,5 +1,9 @@
-function App() {
-  return <div className="App"></div>;
-}
+import Aside from "./Aside";
 
-export default App;
+export default function App() {
+  return (
+    <main className="App">
+      <Aside />
+    </main>
+  );
+}
