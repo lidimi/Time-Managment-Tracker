@@ -9,6 +9,7 @@ export default function Grid(props) {
         title={data.title}
         current={data.timeframes[props.time].current}
         prev={data.timeframes[props.time].previous}
+        bgColor={data.color}
       />
     );
   });

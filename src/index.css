@@ -14,6 +14,10 @@ img {
   max-height: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #root {
   height: 100vh;
   display: flex;
@@ -22,18 +26,18 @@ img {
 }
 
 .app {
-  width: 75%;
+  width: 80%;
   min-width: 900px;
-  max-width: 1000px;
+  max-width: 1200px;
   display: flex;
 }
 
-aside {
+.aside {
   width: 25%;
   color: white;
   position: relative;
-  height: 60vh;
-  max-height: 500px;
+  height: 65vh;
+  max-height: 520px;
 }
 
 .hero {
@@ -71,12 +75,13 @@ aside {
   right: 0;
   bottom: 0;
   padding: 1.5rem;
+  padding-top: 5rem;
   background-color: hsl(235, 46%, 20%);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-.timespan h2 {
+ul li {
   font-size: 1rem;
   font-weight: 400;
   margin: 1rem 0;
@@ -102,9 +107,9 @@ GRID COMPONENT
 }
 
 .background {
-  height: 4rem;
-  background-color: aquamarine;
+  height: 4.5rem;
   border-radius: 15px;
+  background-color: aquamarine;
 }
 
 .data {
@@ -138,8 +143,12 @@ GRID COMPONENT
 ACTIVE STATES
 ============== */
 
-h2:hover {
+li:hover {
   cursor: pointer;
+  color: white;
+}
+
+.active {
   color: white;
 }
 
