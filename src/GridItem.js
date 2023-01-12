@@ -18,7 +18,7 @@ export default function GridItem(props) {
   const backgroundStyle = {
     background: `url(${svgMap[props.title]})`,
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "top right",
+    backgroundPosition: "90% 0",
     backgroundColor: props.bgColor,
   };
 
@@ -36,8 +36,10 @@ export default function GridItem(props) {
             />
           </svg>
         </div>
-        <h4>{props.current}hrs</h4>
-        <p>Last Week - {props.prev}hrs</p>
+        <div className="time-spent">
+          <h4>{props.current}hrs</h4>
+          <p>Last Week - {props.prev}hrs</p>
+        </div>
       </div>
     </section>
   );

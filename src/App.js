@@ -11,6 +11,27 @@ export default function App() {
       setTime(e.target.textContent.toLowerCase());
     }
   }
+
+  const lis = [
+    { id: 1, text: "Daily" },
+    { id: 2, text: "Weekly" },
+    { id: 3, text: "Monthly" },
+  ];
+
+  const [active, setActive] = useState(1);
+
+  const list = lis.map((li) => {
+    return (
+      <li
+        key={li.id}
+        onClick={() => setActive(li.id)}
+        className={active === li.id ? "active" : ""}
+      >
+        {li.text}
+      </li>
+    );
+  });
+
   return (
     <main className="app">
       <aside className="aside">
@@ -18,16 +39,14 @@ export default function App() {
           <div className="avatar">
             <img src={avatar} alt="avatar" />
           </div>
-          <p>Report For</p>
-          <h1>Jeremy Robson</h1>
+          <div className="name">
+            <p>Report For</p>
+            <h1>Jeremy Robson</h1>
+          </div>
         </div>
 
         <section className="timespan">
-          <ul onClick={toggleTimeSpawn}>
-            <li className="active">Daily</li>
-            <li>Weekly</li>
-            <li>Monthly</li>
-          </ul>
+          <ul onClick={toggleTimeSpawn}>{list}</ul>
         </section>
       </aside>
       <Grid time={time} />
