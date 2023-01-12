@@ -126,12 +126,12 @@ GRID COMPONENT
   margin-bottom: 2rem;
 }
 
-.title h3 {
+.title h2 {
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-.data h4 {
+.data h3 {
   font-size: 3.5rem;
   font-weight: 300;
   margin-bottom: 0.8rem;
@@ -210,7 +210,7 @@ li:hover {
     margin: 1rem 0;
   }
 
-  .title h3 {
+  .title h2 {
     font-size: 1.5rem;
   }
 

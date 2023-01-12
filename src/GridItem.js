@@ -27,7 +27,7 @@ export default function GridItem(props) {
       <div className="background" style={backgroundStyle}></div>
       <div className="data">
         <div className="title">
-          <h3>{props.title}</h3>
+          <h2>{props.title}</h2>
           <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
@@ -37,7 +37,7 @@ export default function GridItem(props) {
           </svg>
         </div>
         <div className="time-spent">
-          <h4>{props.current}hrs</h4>
+          <h3>{props.current}hrs</h3>
           <p>Last Week - {props.prev}hrs</p>
         </div>
       </div>
